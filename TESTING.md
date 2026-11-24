@@ -1,21 +1,26 @@
-# FitLog 2.0 release checks
+# FitLog 3.0 verification
 
-## Automated checks
+## Results in the build environment
 
-- `node --check app.js`, `node --check library.js`, `node --check pro.js`, `node --check sw.js`
-- `node tests/core.test.cjs` — simulated DOM and controlled-time integration tests, including mock cloud and IndexedDB operations.
-- The fixture is generated from FitLog 1.0's original initialization; its tests modify a copy to verify the upgrade preserves a non-default note, actual weight, reps and session identity.
+- Node 22 syntax checks on all app JS and service worker: passed.
+- `node tests/core.test.cjs`: 55 passing named checks (simulated DOM, simulated time, mocked IndexedDB and Supabase API). The full output is in `tests/results.txt`.
+- Tests use the original v1 fixture and a v2 fixture produced by the original v2 source; they check migration, exact workout history and IDs, original Arm Day video/timestamps, theme and physique goals, preservation of mocked photo records, exercise library uniqueness, interval progression, history deletion/restore/duplicate cancellation, nutrition, scheduling, explicit load multiplier, RIR controls, backup validation, AES-GCM round-trip/wrong passphrase rejection, and three-way merges including a mocked API round trip.
+- Browser launch was attempted with Playwright/Chromium at a 390 × 844 viewport, but navigation to the temporary local HTTP server returned `net::ERR_BLOCKED_BY_ADMINISTRATOR`. This is an environment restriction, not a passing end-to-end test. The full browser suite was prepared but cannot be executed here. It is included in the GitHub Actions workflow so it can run on a standard hosted runner; no claim is made that CI has run or passed yet.
 
-These checks do not constitute live browser testing. Chromium navigation to the local test server returned `ERR_BLOCKED_BY_ADMINISTRATOR` because this environment disallows navigation. No browser policies were changed. Native browser/PWA behavior and an actual Supabase account require manual verification.
+## Browser acceptance checklist
 
-## Manual acceptance checklist after deployment
+Run `python tests/browser_test.py` after installing Playwright and Chromium, or inspect the GitHub Actions workflow logs. It exercises a real IndexedDB version-1 database upgrade and localStorage migration from a v2 fixture, native photo preservation, visible delete and undo, duplicate cancellation, exercise search/add, timed workout save, nutrition and program forms, PDF generation, encrypted export/import, reload persistence, and offline shell loading. If a browser test fails, investigate before using the release for new data.
 
-1. Before upgrading, export the v1 JSON. Open the same Pages URL, confirm Arm Day's 18 exercises and history. Confirm your edited routines and prior logs remain.
-2. On a phone, verify Today, Train, History, Progress, Body and Settings have readable layouts with no horizontal overflow. Test both themes and weight units.
-3. In Ab Day add a library plank. Create two 3-second sets with 2 seconds rest; start guided mode. Confirm both intervals complete automatically, pause/resume works, and actual reps/weights/RPE can be edited. Save; confirm the History entry. Delete the test log if desired.
-4. In Arm Day use Load video and chapter links; verify external link and embedding on your device. Test an interval with the screen visible; leaving the tab should pause. Reload and resume the active session.
-5. Edit a muscle goal, tap front/back regions, filter progress and view the print report. Choose Save as PDF; confirm text/tables are readable.
-6. In Body enter test same-date Waist 30 in and Hips 100 cm. Expected ratio: 0.76. Enter 185 lb and 15% body fat: estimated lean mass 157.25 lb. Delete test measurements after checking.
-7. Add two nonsensitive test photos of the same view; compare, reload, verify persistence. Export a photo-inclusive backup, restore it, verify photos and workout history. Delete test photos. Keep your actual backup securely.
-8. Test Settings export/import, and install on mobile. After an online visit, disconnect internet; local app should remain accessible. YouTube and cloud require internet.
-9. If configuring Supabase, run SQL, create a test user, push and pull a test snapshot in two browser profiles. Confirm conflict warnings when both profiles attempt to push stale revisions. Confirm unauthenticated and other-account access is denied by RLS. Confirm photos are not included in the cloud payload. Never use a production secret/admin key.
+Manual checks still required on the actual phone and GitHub Pages origin:
+
+1. Back up the current installation with photos, deploy in place, close old tabs, open the original address and verify all real records, settings, routines and gallery. Never clear site data to force an update.
+2. In History delete a duplicate, verify analytics and next rotation, undo, delete again, reload and restore from Recently deleted. Verify intentional same-day logging is allowed after confirmation. Test selecting two matching sessions for merge and restoring the prior revision.
+3. Edit set type, RIR, tempo, unilateral side and load convention. Check saved values and warm-up exclusion. Create two same-group circuit exercises and verify interleaved order.
+4. Play the embedded YouTube video on the deployed site, opt in to interval chapter commands and test pause/play/seek. Browser/YouTube can block this; verify timestamp link fallback. Test audio, speech, screen wake lock, timer interruption and resume.
+5. Upload two matching-view photos, try the slider and timelapse; export/import an encrypted photo backup. Confirm photos stay local during cloud sync. Confirm browser quota errors do not silently imply a successful save.
+6. Test real Supabase sign-in, row-level policies, conflict prompts and revision checks using two devices and a dedicated test account. Verify automatic sync only while signed in, offline changes reconcile after reconnect, and photos are excluded. Never test destructive sync with your only copy of real data.
+7. Check the layout on mobile and desktop, light/dark contrast, keyboard operation, installation and service-worker update. Print reports and confirm the intended date range.
+
+## Known limitations
+
+Browser end-to-end and live services are unverified in this environment. Storage is still compatible with v2's localStorage-first design (not a complete DB rewrite); local snapshots are not off-device disaster recovery. The encyclopedia is expanded to 160 named entries, not 300–500. Reports use browser Print/Save as PDF. Video commands are best effort, no direct video playback analysis. Photo timelapse is an in-app slideshow. Nutrition entries are manual. Cloud sync requires a separately configured account, does not merge actively edited workouts, and does not sync photos. See README for more details.

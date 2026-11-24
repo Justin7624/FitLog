@@ -27,9 +27,31 @@ PASS render route report
 PASS render route library
 PASS print report includes training & body tables
 PASS local save valid after edit
+PASS library unique IDs and display names
+PASS advanced set editor contains RIR
+PASS v3 schema and original IDs
+PASS trash excludes workout from history, recoverable
+PASS undo restores identical record
+PASS duplicate detection and matching routine/date only
+PASS duplicate cancellation preserves active session
+PASS multiweek schedule with rest/deload
+PASS explicit dumbbell multiplier and warm-up exclusion
+PASS nutrition daily totals and readiness score
+PASS nonconflicting cloud records merged
+PASS cloud conflicts detected
+PASS route schedule
+PASS route wellness
+PASS route trash
+PASS route revisions
+PASS route snapshots
 ALL CORE TESTS PASSED (simulated DOM)
+PASS AES-GCM encrypted backup and wrong-password rejection
 PASS mocked cloud sign-in / initial push / photo exclusion
 PASS stale cloud revision rejected
 PASS mock cloud pull and revision-checked push
 PASS mocked IndexedDB photo restore and state transaction
+PASS v2 snapshot validates
+PASS v2 migration retains preferences, IDs and exact workout
+PASS v2 migration leaves photo store intact
+PASS record merge via mocked cloud API
 ALL EXTENDED TESTS PASSED

@@ -1,0 +1,948 @@
+{
+  "version": 1,
+  "routines": [
+    {
+      "id": "arm",
+      "name": "Arm Day",
+      "video": "https://youtu.be/ruoCYrZCBeY",
+      "notes": "fitbymik · 20-minute standing arm workout. 45 seconds work / 15 seconds rest. Weight assignments are suggested defaults (10 lb light, 12 lb heavy); adjust to match what you use. Reps are optional.",
+      "exercises": [
+        {
+          "id": "d3f9205f-d4fa-46d9-81c9-1d06797060ab",
+          "name": "Bicep curls",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "0:26",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d3f9205f-d4fa-46d9-81c9-1d06797060ab",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "afcb2cad-438f-4031-bdd9-8afca6276020",
+          "name": "Bicep and shoulder presses",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "1:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-afcb2cad-438f-4031-bdd9-8afca6276020",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Biceps"
+          ]
+        },
+        {
+          "id": "eb63ac8f-9481-4834-8288-bc7a7ba78010",
+          "name": "Overhead triceps",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "2:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-eb63ac8f-9481-4834-8288-bc7a7ba78010",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "cfcadf82-22c1-44e7-8f24-436498c02b12",
+          "name": "Tricep extensions",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "3:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-cfcadf82-22c1-44e7-8f24-436498c02b12",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "6ce42c6f-12a0-46dc-bce1-f59608338fa8",
+          "name": "Light weight rows",
+          "muscle": "Back",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "4:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-6ce42c6f-12a0-46dc-bce1-f59608338fa8",
+          "region": "Upper back",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "613585b9-39b0-4a0b-aa5e-96399ae6b165",
+          "name": "Shoulder circles",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "5:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-613585b9-39b0-4a0b-aa5e-96399ae6b165",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "3b367f74-46c8-4705-b1a7-fc69e2b44c9b",
+          "name": "Front shoulder raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "6:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-3b367f74-46c8-4705-b1a7-fc69e2b44c9b",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "859f0dc0-5d18-4e19-a2fd-cd1c0f5283ce",
+          "name": "T and Y shoulder raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "7:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-859f0dc0-5d18-4e19-a2fd-cd1c0f5283ce",
+          "region": "Rear delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Side delts",
+            "Upper back"
+          ]
+        },
+        {
+          "id": "40f6320f-1718-4612-8d56-45df82d629db",
+          "name": "Standing core twists",
+          "muscle": "Core",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "8:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-40f6320f-1718-4612-8d56-45df82d629db",
+          "region": "Obliques",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "71b5053e-c104-4fb2-b217-13bf76a599b3",
+          "name": "Single arm bicep work",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "9:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-71b5053e-c104-4fb2-b217-13bf76a599b3",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "d959d837-fa2d-46e9-838c-6c8033f6b06e",
+          "name": "Controlled hammer curls",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "10:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d959d837-fa2d-46e9-838c-6c8033f6b06e",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "3c44f857-45e0-4cb1-aab3-ad7d3c7e5842",
+          "name": "Wide and narrow presses",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "11:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-3c44f857-45e0-4cb1-aab3-ad7d3c7e5842",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Triceps"
+          ]
+        },
+        {
+          "id": "d051f651-05f3-463a-aba2-8a6828dc0a7f",
+          "name": "Bent lateral raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "12:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d051f651-05f3-463a-aba2-8a6828dc0a7f",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "e38b06a5-3915-432a-b2d5-c741724500a3",
+          "name": "Tricep interval training",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "13:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-e38b06a5-3915-432a-b2d5-c741724500a3",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "49ff6484-11bf-44b9-8245-be4356f62a83",
+          "name": "Light weight triceps",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "14:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-49ff6484-11bf-44b9-8245-be4356f62a83",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "0ad7878b-e4cf-448d-bfba-963c6cb61270",
+          "name": "Row and press combo",
+          "muscle": "Back",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "15:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-0ad7878b-e4cf-448d-bfba-963c6cb61270",
+          "region": "Upper back",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Front delts",
+            "Triceps"
+          ]
+        },
+        {
+          "id": "eeb5896f-53b4-4094-847a-4ae720bf849a",
+          "name": "Barre arms endurance",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "16:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-eeb5896f-53b4-4094-847a-4ae720bf849a",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "a7c097ea-eb34-4ad6-8539-7c6a092a2de7",
+          "name": "Final bicep burner",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "17:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 10,
+              "reps": null,
+              "seconds": 45,
+              "done": false,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-a7c097ea-eb34-4ad6-8539-7c6a092a2de7",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        }
+      ]
+    },
+    {
+      "id": "ab",
+      "name": "Ab Day",
+      "video": "",
+      "notes": "Add your own ab exercises or workout video.",
+      "exercises": []
+    },
+    {
+      "id": "leg",
+      "name": "Leg Day",
+      "video": "",
+      "notes": "Add your own leg exercises or workout video.",
+      "exercises": []
+    }
+  ],
+  "history": [
+    {
+      "id": "308cc94c-b579-4051-9e07-bbee6eb30d87",
+      "routineId": "arm",
+      "name": "Arm Day",
+      "date": "2026-11-23",
+      "duration": 20,
+      "notes": "Migrated v2 history fixture",
+      "exercises": [
+        {
+          "id": "d3f9205f-d4fa-46d9-81c9-1d06797060ab",
+          "name": "Bicep curls",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "0:26",
+          "notes": "",
+          "sets": [
+            {
+              "weight": 12,
+              "reps": 13,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d3f9205f-d4fa-46d9-81c9-1d06797060ab",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "afcb2cad-438f-4031-bdd9-8afca6276020",
+          "name": "Bicep and shoulder presses",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "1:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-afcb2cad-438f-4031-bdd9-8afca6276020",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Biceps"
+          ]
+        },
+        {
+          "id": "eb63ac8f-9481-4834-8288-bc7a7ba78010",
+          "name": "Overhead triceps",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "2:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-eb63ac8f-9481-4834-8288-bc7a7ba78010",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "cfcadf82-22c1-44e7-8f24-436498c02b12",
+          "name": "Tricep extensions",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "3:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-cfcadf82-22c1-44e7-8f24-436498c02b12",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "6ce42c6f-12a0-46dc-bce1-f59608338fa8",
+          "name": "Light weight rows",
+          "muscle": "Back",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "4:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-6ce42c6f-12a0-46dc-bce1-f59608338fa8",
+          "region": "Upper back",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "613585b9-39b0-4a0b-aa5e-96399ae6b165",
+          "name": "Shoulder circles",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "5:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-613585b9-39b0-4a0b-aa5e-96399ae6b165",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "3b367f74-46c8-4705-b1a7-fc69e2b44c9b",
+          "name": "Front shoulder raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "6:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-3b367f74-46c8-4705-b1a7-fc69e2b44c9b",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "859f0dc0-5d18-4e19-a2fd-cd1c0f5283ce",
+          "name": "T and Y shoulder raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "7:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-859f0dc0-5d18-4e19-a2fd-cd1c0f5283ce",
+          "region": "Rear delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Side delts",
+            "Upper back"
+          ]
+        },
+        {
+          "id": "40f6320f-1718-4612-8d56-45df82d629db",
+          "name": "Standing core twists",
+          "muscle": "Core",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "8:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-40f6320f-1718-4612-8d56-45df82d629db",
+          "region": "Obliques",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "71b5053e-c104-4fb2-b217-13bf76a599b3",
+          "name": "Single arm bicep work",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "9:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-71b5053e-c104-4fb2-b217-13bf76a599b3",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "d959d837-fa2d-46e9-838c-6c8033f6b06e",
+          "name": "Controlled hammer curls",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "10:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d959d837-fa2d-46e9-838c-6c8033f6b06e",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "3c44f857-45e0-4cb1-aab3-ad7d3c7e5842",
+          "name": "Wide and narrow presses",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "11:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-3c44f857-45e0-4cb1-aab3-ad7d3c7e5842",
+          "region": "Front delts",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Triceps"
+          ]
+        },
+        {
+          "id": "d051f651-05f3-463a-aba2-8a6828dc0a7f",
+          "name": "Bent lateral raises",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "12:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-d051f651-05f3-463a-aba2-8a6828dc0a7f",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "e38b06a5-3915-432a-b2d5-c741724500a3",
+          "name": "Tricep interval training",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "13:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-e38b06a5-3915-432a-b2d5-c741724500a3",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "49ff6484-11bf-44b9-8245-be4356f62a83",
+          "name": "Light weight triceps",
+          "muscle": "Triceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "14:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-49ff6484-11bf-44b9-8245-be4356f62a83",
+          "region": "Triceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "0ad7878b-e4cf-448d-bfba-963c6cb61270",
+          "name": "Row and press combo",
+          "muscle": "Back",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "15:23",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-0ad7878b-e4cf-448d-bfba-963c6cb61270",
+          "region": "Upper back",
+          "equipment": "Dumbbells",
+          "secondary": [
+            "Front delts",
+            "Triceps"
+          ]
+        },
+        {
+          "id": "eeb5896f-53b4-4094-847a-4ae720bf849a",
+          "name": "Barre arms endurance",
+          "muscle": "Shoulders",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "16:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-eeb5896f-53b4-4094-847a-4ae720bf849a",
+          "region": "Side delts",
+          "equipment": "Dumbbells",
+          "secondary": []
+        },
+        {
+          "id": "a7c097ea-eb34-4ad6-8539-7c6a092a2de7",
+          "name": "Final bicep burner",
+          "muscle": "Biceps",
+          "mode": "time",
+          "rest": 15,
+          "stamp": "17:24",
+          "notes": "",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "seconds": 45,
+              "done": true,
+              "type": "Normal",
+              "rpe": null
+            }
+          ],
+          "exerciseKey": "legacy-a7c097ea-eb34-4ad6-8539-7c6a092a2de7",
+          "region": "Biceps",
+          "equipment": "Dumbbells",
+          "secondary": []
+        }
+      ]
+    }
+  ],
+  "active": null,
+  "settings": {
+    "theme": "light",
+    "unit": "lb",
+    "goal": 3,
+    "autoRest": true
+  },
+  "measurements": [],
+  "pro": {
+    "schema": 2,
+    "profiles": [
+      {
+        "id": "home",
+        "name": "Home",
+        "equipment": [
+          "Bodyweight",
+          "Dumbbells"
+        ],
+        "weights": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": "gym",
+        "name": "Gym",
+        "equipment": [
+          "Bodyweight",
+          "Dumbbells",
+          "Machine",
+          "Cable"
+        ],
+        "weights": []
+      }
+    ],
+    "profile": "home",
+    "goals": {
+      "Biceps": 9,
+      "Triceps": 4,
+      "Front delts": 4,
+      "Side delts": 10,
+      "Rear delts": 4,
+      "Lats": 10,
+      "Upper back": 4,
+      "Lower back": 4,
+      "Chest": 4,
+      "Abs": 6,
+      "Obliques": 6,
+      "Glutes": 10,
+      "Quads": 10,
+      "Hamstrings": 4,
+      "Calves": 4,
+      "Forearms": 4,
+      "Other": 4
+    },
+    "readiness": [],
+    "recoveryHours": 48,
+    "guide": null,
+    "restTimer": null,
+    "savedAt": 1795483636001
+  }
+}

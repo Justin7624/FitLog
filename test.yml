@@ -1,0 +1,22 @@
+name: FitLog checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          for f in app.js library.js pro.js v3-core.js v3-training.js v3-ui.js v3-sync.js sw.js; do node --check "$f"; done
+          node tests/core.test.cjs
+      - run: pip install playwright==1.52.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/browser_test.py
