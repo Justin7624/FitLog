@@ -1,3 +1,15 @@
+# FitLog 4.0 testing
+
+- Original v3 automated regression suite: passed in this environment.
+- New 11 geometry/fitting test groups: passed (mesh connectedness, manifold edge incidence, winding, fitting, units, symmetry, missing inputs, corrections, deterministic export, extreme inputs).
+- Real Chromium isolated DOM/Canvas tests: passed with mocked origin storage, including app integration, mobile viewport, actual rendering, rotation, muscle selection, overlay and timeline, simulator, goal, shape correction, OBJ/HTML report downloads and existing history preservation. WebGL unavailable in this browser; Canvas fallback exercised.
+- Localhost navigation remains blocked by environment administrator policy (`ERR_BLOCKED_BY_ADMINISTRATOR`). Consequently native IndexedDB migration and service-worker offline loading have not been verified in a live origin here; the original and new Playwright origin-based suites are included and configured in GitHub Actions. Live WebGL rendering and native browser PDF printing remain unverified.
+- Base mesh verified as one connected watertight manifold; no validation of real-person resemblance or all possible deformed self-intersections. Numeric fit is not real-world accuracy.
+
+Run `node tests/core.test.cjs` and `node tests/body-fit.test.cjs`. For browser checks install Playwright and Chromium, then run `python tests/body_browser_inline.py`, `python tests/browser_test.py` and `python tests/body_browser.py`.
+
+## Previous version test records (historical)
+
 # FitLog 3.0 verification
 
 ## Results in the build environment

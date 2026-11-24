@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "FitLog 3.0 \u2014 Training Studio",
+  "name": "FitLog 4.0 \u2014 Body Studio",
   "short_name": "FitLog",
-  "description": "Local-first workout programming, fitness history, guided workouts, analytics and wellness.",
+  "description": "Local-first training and measurement-fitted 3D physique visualization.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

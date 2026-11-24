@@ -1,0 +1,85 @@
+PASS v1 migration preserves all 18 exercises and timestamped video
+PASS v1 exact historical notes/reps/weights/IDs retained
+PASS legacy exercise key matches copied log
+PASS library count and filter
+PASS guided set starts work
+PASS automatic completion then rest
+PASS automatic next working set
+PASS guided sequence done
+PASS finished session persisted
+PASS anatomical region map and target set
+PASS mixed-unit ratios and lean mass
+PASS valid v1 and v2 backup
+PASS valid photo backup parsed; invalid JPEG rejected
+PASS substitution respects equipment and target muscle
+PASS progressive overload after two successful logged sessions
+PASS secure cloud config blocks secret keys
+PASS video ID and timestamps
+PASS render route home
+PASS render route routines
+PASS render route history
+PASS render route progress
+PASS render route settings
+PASS render route equipment
+PASS render route goals
+PASS render route body
+PASS render route report
+PASS render route library
+PASS print report includes training & body tables
+PASS local save valid after edit
+PASS library unique IDs and display names
+PASS advanced set editor contains RIR
+PASS v3 schema and original IDs
+PASS trash excludes workout from history, recoverable
+PASS undo restores identical record
+PASS duplicate detection and matching routine/date only
+PASS duplicate cancellation preserves active session
+PASS multiweek schedule with rest/deload
+PASS explicit dumbbell multiplier and warm-up exclusion
+PASS nutrition daily totals and readiness score
+PASS nonconflicting cloud records merged
+PASS cloud conflicts detected
+PASS route schedule
+PASS route wellness
+PASS route trash
+PASS route revisions
+PASS route snapshots
+ALL CORE TESTS PASSED (simulated DOM)
+PASS AES-GCM encrypted backup and wrong-password rejection
+PASS mocked cloud sign-in / initial push / photo exclusion
+PASS stale cloud revision rejected
+PASS mock cloud pull and revision-checked push
+PASS mocked IndexedDB photo restore and state transaction
+PASS v2 snapshot validates
+PASS v2 migration retains preferences, IDs and exact workout
+PASS v2 migration leaves photo store intact
+PASS record merge via mocked cloud API
+ALL EXTENDED TESTS PASSED
+PASS mesh has 21k+ vertices and 43k+ triangles, finite indices
+PASS mesh is one connected, closed manifold with outward oriented faces
+PASS snapshot converts units, retains source dates, ignores later and invalid inputs
+PASS empty data yields explicit defaults and no measured RMSE
+PASS typical full set fits measured cross-sections within 1 cm
+PASS asymmetric arm circumferences remain distinct and match left/right targets
+PASS corrections change geometry and reported residual without mutating inputs
+PASS weight and fat change estimated geometry, but not treated as measured mass
+PASS invalid, conflicting and extreme inputs return finite bounded geometry and residuals
+PASS mesh normals valid, OBJ has full vertex and face counts
+PASS deterministic mesh fit and all region IDs in range
+11 Body Studio unit checks passed
+renderer: Canvas 3D
+stats: 8 / 24
+Inputs supplied
+0.01 cm
+Fitted RMSE
+180.0 cm
+Height
+83.9 kg
+Weight input
+PASS actual canvas renderer and rotation controls
+PASS interactive region overlay
+PASS timeline and animation controls
+PASS simulator and separate goal persistence
+PASS OBJ export
+PASS downloadable comparison report
+PASS original history retained

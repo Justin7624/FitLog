@@ -1,3 +1,9 @@
+# FitLog 4.0 — Body Studio
+
+**Start here:** [Body Studio upgrade and user guide](BODY_STUDIO.md). FitLog 4.0 retains the original 3.0 app, data schema and storage keys; it adds a private measurement-fitted 3D viewer, simulator, comparison timeline, goal builder and exports. Use the same GitHub Pages origin, and back up existing logs and photos first.
+
+## Existing FitLog 3.0 documentation (retained)
+
 # FitLog 3.0 — Training Studio
 
 Private, local-first workout tracker for GitHub Pages. No framework, paid subscription, external build step, or account is required for local use.
