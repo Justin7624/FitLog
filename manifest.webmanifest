@@ -1,1 +1,25 @@
-{"id":"./","name":"FitLog Training Journal","short_name":"FitLog","description":"Private workout logging, custom routines and progress.","start_url":"./","scope":"./","display":"standalone","background_color":"#101820","theme_color":"#101820","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "id": "./",
+  "name": "FitLog Pro \u2014 Training Studio",
+  "short_name": "FitLog",
+  "description": "Local-first fitness tracking, guided workouts and body composition.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1119",
+  "theme_color": "#0b1119",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+PASS v1 migration preserves all 18 exercises and timestamped video
+PASS v1 exact historical notes/reps/weights/IDs retained
+PASS legacy exercise key matches copied log
+PASS library count and filter
+PASS guided set starts work
+PASS automatic completion then rest
+PASS automatic next working set
+PASS guided sequence done
+PASS finished session persisted
+PASS anatomical region map and target set
+PASS mixed-unit ratios and lean mass
+PASS valid v1 and v2 backup
+PASS valid photo backup parsed; invalid JPEG rejected
+PASS substitution respects equipment and target muscle
+PASS progressive overload after two successful logged sessions
+PASS secure cloud config blocks secret keys
+PASS video ID and timestamps
+PASS render route home
+PASS render route routines
+PASS render route history
+PASS render route progress
+PASS render route settings
+PASS render route equipment
+PASS render route goals
+PASS render route body
+PASS render route report
+PASS render route library
+PASS print report includes training & body tables
+PASS local save valid after edit
+ALL CORE TESTS PASSED (simulated DOM)
+PASS mocked cloud sign-in / initial push / photo exclusion
+PASS stale cloud revision rejected
+PASS mock cloud pull and revision-checked push
+PASS mocked IndexedDB photo restore and state transaction
+ALL EXTENDED TESTS PASSED
