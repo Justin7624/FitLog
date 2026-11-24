@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "FitLog 4.0 \u2014 Body Studio",
+  "name": "FitLog 5.0 \u2014 360\u00b0 Body Scan",
   "short_name": "FitLog",
-  "description": "Local-first training and measurement-fitted 3D physique visualization.",
+  "description": "Local training tracker and experimental photo-assisted body reconstruction.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

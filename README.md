@@ -1,3 +1,13 @@
+# FitLog 5.0 — 360° Body Scan (experimental)
+
+**Start here:** [Scan setup, installation and limitations](SCAN_GUIDE.md) · [New verification record](SCAN_TESTING.md).
+
+This upgrade is built from the 4.0 release plus the 4.0.1 root-path deployment fix. All runtime assets are in the repository root, including `body-mesh.js`. Preserve the existing URL and browser storage. Body → Open 360° Body Scan. This version adds local, multi-angle silhouette-constrained template deformation and manual measurement fitting, not a validated or photorealistic ZOZOFIT equivalent. All old training features and measurement-only Body Studio remain. Existing backups do not include the new scan database; export a separate encrypted scan backup.
+
+---
+
+## Previous release documentation (retained for existing features)
+
 # FitLog 4.0 — Body Studio
 
 **Start here:** [Body Studio upgrade and user guide](BODY_STUDIO.md). FitLog 4.0 retains the original 3.0 app, data schema and storage keys; it adds a private measurement-fitted 3D viewer, simulator, comparison timeline, goal builder and exports. Use the same GitHub Pages origin, and back up existing logs and photos first.

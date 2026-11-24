@@ -3,7 +3,7 @@
 ## Upgrade without losing data
 
 1. In your existing FitLog 3.0 website, open Settings and export a complete backup **including photos** (encrypted if desired). Retain the passphrase separately.
-2. Extract the release ZIP. Upload its **contents**, including `assets/`, `tests/`, `tools/`, `.github/` and `.nojekyll`, into the root of your existing GitHub repository, replacing same-name files. Do not create a new repository or change the website origin. Commit the update. The original static GitHub Pages deployment still works without build steps or API keys.
+2. Extract the release ZIP. Upload its **contents**, including `tests/`, `tools/`, `.github/` and `.nojekyll`, into the root of your existing GitHub repository, replacing same-name files. Do not create a new repository or change the website origin. Commit the update. The original static GitHub Pages deployment still works without build steps or API keys.
 3. Wait for GitHub Pages to deploy. Reopen and refresh the existing site; a service worker update may require another reload or reopening the PWA. Do not clear browser storage. The header should say Body Studio · 4.0. Verify history, routines, measurements and photos before deleting your backup.
 4. Open **Body → Open Body Studio**. All existing FitLog 3 features remain in their original screens. Data still uses the `fitlog-v1` storage key and `fitlog-pro-v2` IndexedDB database. The v3 payload schema is intentionally retained; the new optional `pro.v3.bodyStudio` extension is added lazily. Backups and encrypted backups include that extension; native photo storage is unchanged. Optional existing cloud sync merges the extension at the field level with conflict review; photos, generated mesh files and reports are not uploaded. A different origin or browser profile cannot access your old local storage; use backup restore instead.
 
@@ -19,7 +19,7 @@
 
 ## Geometry and accuracy limitations
 
-The asset is a single connected, closed triangular surface with 21,756 vertices and 43,508 triangles, built from anatomical cross-section lofts with blended joints, face/neck, shoulder, torso, arm, pelvic, leg, foot and thumb contours. It is an original **stylized anatomical human mesh**, not a commercial photorealistic human scan. Hands, face, individual muscles, skin, posture and proportions are simplified; there is one reference body topology, with no sex-specific skeletal or tissue models. MakeHuman could not be retrieved during development and is not included. See `assets/LICENSE.md` and `tools/build_mesh.py`.
+The asset is a single connected, closed triangular surface with 21,756 vertices and 43,508 triangles, built from anatomical cross-section lofts with blended joints, face/neck, shoulder, torso, arm, pelvic, leg, foot and thumb contours. It is an original **stylized anatomical human mesh**, not a commercial photorealistic human scan. Hands, face, individual muscles, skin, posture and proportions are simplified; there is one reference body topology, with no sex-specific skeletal or tissue models. MakeHuman could not be retrieved during development and is not included. See `BODY_MESH_LICENSE.md` and `tools/build_mesh.py`.
 
 The fitter scales height and iteratively adjusts transverse mesh slices. It computes segment lengths (shoulder and hip tape envelopes use convex perimeters) at fixed anatomical heights of the base pose. The shoulder width uses outside-to-outside geometry at the shoulder slice. Limb cross-sections are horizontal approximations, not perpendicular tape sections on angled limbs. Generic bilateral measurements are applied to both sides, but symmetry is reported only when explicit left/right values are available. Width and girth can conflict; extreme inputs may distort or overlap anatomy. The fitter bounds scaling, returns residuals and flags large errors; it does not certify no self-intersections for all deformations.
 
@@ -29,7 +29,7 @@ The viewer uses local WebGL where supported; a genuine CPU-projected triangular 
 
 ## Source structure
 
-- `assets/body-mesh.js`: vendored original mesh; no asset requests to third parties.
+- `body-mesh.js`: vendored original mesh; no asset requests to third parties.
 - `body-fit.js`: normalization, date snapshots, geometry fitting, residuals, symmetry and OBJ output.
 - `body-view.js`: WebGL renderer, Canvas fallback, picking, rotation, zoom and overlay.
 - `body-studio.js` and `.css`: app integration, controls, CSV import, reports and photo references.

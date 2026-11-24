@@ -1,3 +1,7 @@
+# FitLog 5.0 testing
+
+See [SCAN_TESTING.md](SCAN_TESTING.md) for the new tests and actual execution record. The prior verification notes are retained below for reference.
+
 # FitLog 4.0 testing
 
 - Original v3 automated regression suite: passed in this environment.

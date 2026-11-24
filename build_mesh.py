@@ -56,7 +56,7 @@ v=verts[faces]; volume=np.einsum('ij,ij->i',v[:,0],np.cross(v[:,1],v[:,2])).sum(
 if volume<0:faces=faces[:,::-1]
 # Store a compact original template (rounded cm) as a local classic script, offline and no fetch.
 asset={'vertices':np.round(verts,3).flatten().tolist(),'triangles':faces.flatten().tolist(),'height':175,'license':'CC0-1.0','description':'Original continuous anatomical loft template, stylized, not a scanned person.'}
-path=Path(__file__).resolve().parents[1]/'assets'/'body-mesh.js'
+path=Path(__file__).resolve().parents[1]/'body-mesh.js'
 path.write_text('/* Original FitLog anatomical mesh, CC0-1.0. */\nconst FITLOG_BODY_MESH='+json.dumps(asset,separators=(',',':'))+';\nif(typeof module!=="undefined")module.exports=FITLOG_BODY_MESH;\n')
 print(len(verts),'vertices',len(faces),'triangles',path.stat().st_size,'bytes')
 import trimesh

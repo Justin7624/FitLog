@@ -15,11 +15,14 @@ jobs:
         with:
           python-version: '3.12'
       - run: |
-          for f in app.js library.js pro.js v3-core.js v3-training.js v3-ui.js v3-sync.js body-fit.js body-view.js body-studio.js assets/body-mesh.js sw.js; do node --check "$f"; done
+          for f in app.js library.js pro.js v3-core.js v3-training.js v3-ui.js v3-sync.js body-fit.js body-view.js body-studio.js body-mesh.js scan-core.js scan-ui.js sw.js; do node --check "$f"; done
           node tests/core.test.cjs
           node tests/body-fit.test.cjs
+          node tests/scan-core.test.cjs
       - run: pip install playwright==1.52.0
       - run: python -m playwright install --with-deps chromium
       - run: python tests/browser_test.py
       - run: python tests/body_browser_inline.py
       - run: python tests/body_browser.py
+      - run: python tests/scan_browser_inline.py
+      - run: python tests/scan_browser.py
